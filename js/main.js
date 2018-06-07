@@ -3,32 +3,37 @@
 var cards = ["queen","queen","king","king"];
 var cardsInPlay = [];
 
-var cardOne = cards[0];
-cardsInPlay.push('queen');
+var checkForMatch = function(){
+if(cardsInPlay[0] === cardsInPlay[1]){
+	console.log("You found a match!");
+} else {
+	console.log("Sorry, try again");
+}
+};
+cardsInPlay.push(cards[0]);
+cardsInPlay.push(cards[2]);
+cardsInPlay.push(cards[1]);
 
-var cardTwo = cards[2];
-cardsInPlay.push('king');
-
-
- console.log("User flipped"+" "+cardOne);     
- console.log("User flipped"+" "+ cardTwo);    
-
- if(cardsInPlay.lenght === 2 && cardsInPlay[0] === cardsInPlay[1] ) {
+var flipCard = function(cardId){
+ 
+ if(cardsInPlay.lenght === 2 && cardsInPlay[0] === cardsInPlay[1]) {     
 	alert('You found a match');
 } else {
       alert('Sorry, try again');
 }
+                                                  
+   console.log("User flipped " + cards[0]);
+   console.log("User flipped " + cards[2]);
+  // checkForMatch();                                //     tutaj ma byc wedlug assesmentu 9
+};
 
- //console.log("User flipped"+" "+cardOne); 
- // console.log("User flipped"+" "+ cardTwo);
+ //  flipCard();
+  flipCard(0, 2);  // te dwie wersje sa dobre
+    
 
-/*
-if (cardsInPlay.lenght === 2 && cardsInPlay[0] === cardsInPlay[1]){
-	 alert("You found a match");
-} else if
-  (cardsInPlay.lenght === 2 && cardsInPlay[0] !== cardsInPlay[1]){
-  	 alert("Sorry");
-  }
-*/
+
+ 
+
+
 
 
