@@ -1,7 +1,7 @@
 
 var cards = [
 {
-	rank: 'queen',                                   //powojne "" qute zmienic moze na jedno'
+	rank: 'queen',                                   
 	suit: 'hearts',
 	cardImage: "images/queen-of-hearts.png"
 },
